@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //Exercicio1();
+        //Exercicio2();
+        Exercicio3();
+    }
+
+    private static void Exercicio2() {
+        int cont = 1;
+        int soma = 0;
+        int num = 0;
+        Scanner sc = new Scanner(System.in);
+        while (num != -1) {
+            System.out.println("Digite o " + cont + "° número: ");
+            num = sc.nextInt();
+            if (num != 1) {
+                cont = cont + 1;
+                soma = soma + num;
+            }
+            cont = cont + 1;
+        }
+        System.out.println("Total de números digitados : " + cont);
+        System.out.println("Soma dos números digitados: " + soma);
+
+    }
+
+    private static void Exercicio1() {
+        int par = 0;
+        int imp = 0;
+        int num = 1;
+        System.out.println("Leitor de números!");
+        Scanner in = new Scanner(System.in);
+        do {
+            System.out.println("Informe um número. Digite 0 para parar: ");
+            num = in.nextInt(); // lendo o número
+            if (num % 2 == 0) {
+                par = par + 1;
+            } else {
+                imp = imp + 1;
+            }
+            System.out.println("Números pares: " + par);
+            System.out.println("Número impares: " + imp);
+
+        } while (num != 0);
+        par = par - 1;
+        System.out.println("Número pares digitados: " + par);
+        System.out.println("Números impares digitados: " + imp);
+
+    }
+
+    private static void Exercicio3() {
+        Scanner sc = new Scanner(System.in);
+        Double nota = 0.0;
+        Double soma = 0.0;
+        for(int i = 1, i <=3, i++ ){
+            Double nota = sc.nextDouble();
+            soma = soma + nota;
+    }
+        System.out.println("A soma das nota é " + soma);
+        System.out.println("A média das notas é igual a " + ((soma/3));
+    }
+}
