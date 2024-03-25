@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("ESCOLHA A MODALIDADE DESEJADA PARA APOSTAR!!!!");
+        System.out.println("1: apostar de 0 a 100.");
+        System.out.println(("2: apostar de A a Z."));
+        System.out.println("3: apostar entre par e impar.");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Esolha a modalidade desejada: ");
+        int aposta = sc.nextInt();
+
+        switch (aposta) {
+            // caso o usuário escolha a 1° modalidade
+            case 1:
+                System.out.println("Modalida escolhida: 0 a 100");
+                // código
+                break;
+            // caso o usuário escolha a 2° modalidade
+            case 2:
+                System.out.println("Modalidade esoclhida: de A a Z");
+                // código
+                break;
+            // caso o usuário escolha a 3° modalidade
+            case 3:
+                System.out.println("Modalidade escolhida: PAR ou IMPAR");
+                // lendo o número digitado
+                System.out.println("Digite um número:");
+                int num = sc.nextInt();
+                // testando se o número é par
+                if (num % 2 == 0) {
+                    // mensagem caso o número seja par
+                    System.out.println("Voçê ganho R$ 100,00");
+                } else {
+                    // mensagem caso o número seja impar
+                    System.out.println("Que pena! O número digitado é impar e a premiação foi para os número pares!");
+                }
+                break;
+        }
+    }
+}
