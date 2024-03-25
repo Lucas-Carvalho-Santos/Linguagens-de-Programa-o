@@ -22,11 +22,14 @@ public class Main {
                 Random random = new Random();
                 int na = random.nextInt(100);
                 // testando se o número dígitado e o número aleatório são iguais
-                if (n1 == na){
+                if (n1 > 100){
+                    System.out.println("Aposta inválida");
+                } else if (n1 == na) {
                     System.out.println("Você ganhou R$ 1.000,00 ");
                 } else {
                     System.out.println("Que pena. O número sorteado foi " + na);
                 }
+
                 break;
             // caso o usuário escolha a 2° modalidade
             case 2:
